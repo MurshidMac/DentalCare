@@ -47,5 +47,11 @@ namespace Dental_Care
             Appointments form = new Appointments();
             form.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            PatientEnquiry form = new PatientEnquiry();
+            form.Show();
+        }
     }
 }
