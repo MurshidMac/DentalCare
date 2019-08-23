@@ -84,9 +84,6 @@
       <DependentUpon>AppointPatientDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Database\DBConnect.cs" />
-    <Compile Include="DentalDBDataSet.cs">
-      <DependentUpon>DentalDBDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DentalDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -97,14 +94,6 @@
     </Compile>
     <Compile Include="DoctorsRegistration.Designer.cs">
       <DependentUpon>DoctorsRegistration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="jobsDataSet.cs">
-      <DependentUpon>jobsDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="jobsDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>jobsDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -160,17 +149,6 @@
     </None>
     <None Include="DentalDBDataSet.xss">
       <DependentUpon>DentalDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="jobsDataSet.xsc">
-      <DependentUpon>jobsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="jobsDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>jobsDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="jobsDataSet.xss">
-      <DependentUpon>jobsDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
