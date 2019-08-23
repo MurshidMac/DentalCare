@@ -82,11 +82,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(94, 63);
+            this.label3.Location = new System.Drawing.Point(67, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 13);
+            this.label3.Size = new System.Drawing.Size(177, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "In The Format d/M/yyyy";
+            this.label3.Text = "In The Format 01/10/2009 7:34 PM";
             // 
             // AppointPatientDetails
             // 
