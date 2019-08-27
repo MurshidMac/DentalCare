@@ -104,11 +104,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DentalDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DoctorAppointmentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorAppointmentList.Designer.cs">
+      <DependentUpon>DoctorAppointmentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorPanel.Designer.cs">
+      <DependentUpon>DoctorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorsAppointmentView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorsAppointmentView.Designer.cs">
+      <DependentUpon>DoctorsAppointmentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorsDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorsDetails.Designer.cs">
+      <DependentUpon>DoctorsDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoctorsRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DoctorsRegistration.Designer.cs">
       <DependentUpon>DoctorsRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -126,6 +156,12 @@
     <Compile Include="Models\DoctorModel.cs" />
     <Compile Include="Models\PatientModel.cs" />
     <Compile Include="Models\UserModel.cs" />
+    <Compile Include="PatientDetailsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientDetailsView.Designer.cs">
+      <DependentUpon>PatientDetailsView.cs</DependentUpon>
+    </Compile>
     <Compile Include="PatientEnquiry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,14 +185,32 @@
     <EmbeddedResource Include="AppointPatientDetails.resx">
       <DependentUpon>AppointPatientDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DoctorAppointmentList.resx">
+      <DependentUpon>DoctorAppointmentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorPanel.resx">
+      <DependentUpon>DoctorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorsAppointmentView.resx">
+      <DependentUpon>DoctorsAppointmentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorsDetails.resx">
+      <DependentUpon>DoctorsDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DoctorsRegistration.resx">
       <DependentUpon>DoctorsRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPanel.resx">
       <DependentUpon>MainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientDetailsView.resx">
+      <DependentUpon>PatientDetailsView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PatientEnquiry.resx">
       <DependentUpon>PatientEnquiry.cs</DependentUpon>

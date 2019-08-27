@@ -10,18 +10,20 @@ using System.Windows.Forms;
 
 namespace Dental_Care
 {
-    public partial class PatientEnquiry : Form
+    public partial class DoctorAppointmentList : Form
     {
-        public PatientEnquiry()
+        Models.UserModel model;
+        public DoctorAppointmentList(Models.UserModel model)
         {
             InitializeComponent();
+            this.model = model;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var patientName = textBox1.Text;
-            PatientDetailsView view = new PatientDetailsView(patientName);
-            view.Show();
+            var date = textBox1.Text;
+            DoctorsAppointmentView form = new DoctorsAppointmentView(model, date);
+            form.Show();
         }
     }
 }

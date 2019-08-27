@@ -75,7 +75,7 @@ namespace Dental_Care
             }
             else
             {
-                MessageBox.Show("Doctors Details not created");
+                MessageBox.Show("Doctors details exists or please check for a unique National Identity Card Details");
             }
 
 

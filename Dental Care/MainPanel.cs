@@ -42,5 +42,11 @@ namespace Dental_Care
             PatientEnquiry form = new PatientEnquiry();
             form.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            DoctorsDetails form = new DoctorsDetails();
+            form.Show();
+        }
     }
 }

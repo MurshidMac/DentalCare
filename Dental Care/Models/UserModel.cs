@@ -6,15 +6,19 @@ using System.Threading.Tasks;
 
 namespace Dental_Care.Models
 {
-    class UserModel
+    public class UserModel
     {
         string username;
         string password;
-        public UserModel(string username, string password)
+        string roleId;
+        public UserModel(string username, string password, string roleId)
         {
             this.username = username;
             this.password = password;
+            this.roleId = roleId;
         }
+
+
         public string getUsername()
         {
             return this.username;
@@ -23,6 +27,11 @@ namespace Dental_Care.Models
         public string getPassword()
         {
             return this.password;
+        }
+
+        public string getRoleIdd()
+        {
+            return this.roleId;
         }
     }
 }

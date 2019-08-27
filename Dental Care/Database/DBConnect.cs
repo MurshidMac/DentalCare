@@ -91,12 +91,21 @@ namespace Dental_Care.Database
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
-                //Execute command
-                cmd.ExecuteNonQuery();
+                try
+                {
+                    //Execute command
+                    cmd.ExecuteNonQuery();
 
-                //close connection
-                this.CloseConnection();
-                return true;
+                    //close connection
+                    this.CloseConnection();
+                    return true;
+                } catch (Exception e)
+                {
+
+
+                    return false;
+                }
+               
             }
             else
             {

@@ -50,8 +50,8 @@ namespace Dental_Care
 
                     string sname = reader[0].ToString(); ; //name is coming from database
                     string pass = reader[1].ToString();
-                    MessageBox.Show(sname + "  " + pass);
-                    Dental_Care.Models.UserModel obj = new Models.UserModel(sname, pass);
+                    string roleId = reader[2].ToString();
+                    Dental_Care.Models.UserModel obj = new Models.UserModel(sname, pass, roleId);
                     list.Add(obj);
                     //return value=true;
                 }
@@ -75,21 +75,6 @@ namespace Dental_Care
 
         }
 
-       
-        private void button2_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             var username = textBox1.Text;
@@ -100,13 +85,49 @@ namespace Dental_Care
             // return the status
             userlist.ForEach(element =>
             {
-                if (element.getUsername() == username && element.getPassword() == password)
+                // These are the access level
+                // 1 Doctor Only Patient Enquiry
+                // 2 Front Clerk and 
+                // 3 Manager who is the admin Will only have Full Access
+
+                // This is for Doctor
+                if (element.getUsername() == username && element.getPassword() == password && element.getRoleIdd() == "2")
+                {
+                    this.statusofLogin = true;
+                    DoctorPanel form = new DoctorPanel(element);
+                    form.Show();
+                    textBox1.Text= "";
+                    textBox2.Text = "";
+
+                }
+
+                // This is for Manager
+                if (element.getUsername() == username && element.getPassword() == password && element.getRoleIdd() == "3")
                 {
                     this.statusofLogin = true;
                     MainPanel form = new MainPanel();
                     form.Show();
+                    textBox1.Text = "";
+                    textBox2.Text = "";
                 }
-
+                // This is for Nurse
+                if (element.getUsername() == username && element.getPassword() == password && element.getRoleIdd() == "4")
+                {
+                    this.statusofLogin = true;
+                    MainPanel form = new MainPanel();
+                    form.Show();
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                }
+                // This is for Front Clerk
+                if (element.getUsername() == username && element.getPassword() == password && element.getRoleIdd() == "5")
+                {
+                    this.statusofLogin = true;
+                    MainPanel form = new MainPanel();
+                    form.Show();
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                }
             });
 
         }

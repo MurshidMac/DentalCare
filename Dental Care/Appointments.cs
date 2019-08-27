@@ -38,7 +38,7 @@ namespace Dental_Care
                 while (dr.Read())
                 {
                     listofDoctors.Add(dr[0].ToString());
-                    MessageBox.Show(dr[0].ToString());
+                    //MessageBox.Show(dr[0].ToString());
                 }
 
             listofDoctors.ForEach(elment =>

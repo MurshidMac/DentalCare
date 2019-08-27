@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dental_Care
 {
-    class PatientModel
+    public class PatientModel
     {
         private string name;
         private string address;
