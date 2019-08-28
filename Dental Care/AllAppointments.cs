@@ -9,30 +9,28 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-// Doctors Appointment View to See the list of Patients in the System
+// All Appointments Listed
 namespace Dental_Care
 {
-    public partial class DoctorsAppointmentView : Form
+    public partial class AllAppointments : Form
     {
         SqlDataAdapter sda;
         DataTable dt;
-        Models.UserModel md;
-        string date;
-        public DoctorsAppointmentView(Models.UserModel model,string date)
+        public AllAppointments()
         {
             InitializeComponent();
-            this.md = model;
-            this.date = date;
         }
 
-        // Loads Data Initially
-        private void DoctorsAppointmentView_Load(object sender, EventArgs e)
+        // Gets ALL the appointments available for working day.
+        private void AllAppointments_Load(object sender, EventArgs e)
         {
+            DateTime today = DateTime.Today;
+            MessageBox.Show(today.ToString("d"));
             try
             {
                 string connetionString = "Data Source=DESKTOP-S6B08UF\\SQLEXPRESS;Initial Catalog=DentalDB;Integrated Security=True";
                 SqlConnection con = new SqlConnection(connetionString);
-                string query = "SELECT [DocName] ,[Date], [description], [amount] FROM [DentalDB].[dbo].[Appointment] a inner join [DentalDB].[dbo].[Treatment] r on r.Code = a.treatment_ID where a.Date = '" + this.date + "' AND a.DocName = '" + this.md.getUsername() + "';";
+                string query = "SELECT * FROM [DentalDB].[dbo].[Appointment] ap inner join [DentalDB].[dbo].[Treatment] tr on tr.Code = ap.treatment_ID where ap.[Date] = '" + today.ToString("d") + "';";
                 SqlCommand command = new SqlCommand(query, con);
                 sda = new SqlDataAdapter(command);
                 dt = new DataTable();
@@ -41,7 +39,7 @@ namespace Dental_Care
             }
             catch (Exception)
             {
-                MessageBox.Show("Please input in the correct format");
+                MessageBox.Show("Please try in few minutes");
             }
         }
     }

@@ -80,11 +80,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlertBox.cs">
+    <Compile Include="AllAppointments.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlertBox.Designer.cs">
-      <DependentUpon>AlertBox.cs</DependentUpon>
+    <Compile Include="AllAppointments.Designer.cs">
+      <DependentUpon>AllAppointments.cs</DependentUpon>
     </Compile>
     <Compile Include="Appointments.cs">
       <SubType>Form</SubType>
@@ -134,6 +134,12 @@
     <Compile Include="DoctorsRegistration.Designer.cs">
       <DependentUpon>DoctorsRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="IncomeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeReport.Designer.cs">
+      <DependentUpon>IncomeReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Invoice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,7 @@
     </Compile>
     <Compile Include="Models\AppointmentModel.cs" />
     <Compile Include="Models\DoctorModel.cs" />
+    <Compile Include="Models\IncomeModel.cs" />
     <Compile Include="Models\PatientModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="PatientDetailsView.cs">
@@ -176,8 +183,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AlertBox.resx">
-      <DependentUpon>AlertBox.cs</DependentUpon>
+    <EmbeddedResource Include="AllAppointments.resx">
+      <DependentUpon>AllAppointments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Appointments.resx">
       <DependentUpon>Appointments.cs</DependentUpon>
@@ -199,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DoctorsRegistration.resx">
       <DependentUpon>DoctorsRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeReport.resx">
+      <DependentUpon>IncomeReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Invoice.resx">
       <DependentUpon>Invoice.cs</DependentUpon>

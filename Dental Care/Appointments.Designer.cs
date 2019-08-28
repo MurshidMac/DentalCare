@@ -70,6 +70,7 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "Appointments";
             this.Text = "Appointments";
+            this.Load += new System.EventHandler(this.Appointments_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

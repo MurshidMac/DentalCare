@@ -48,5 +48,17 @@ namespace Dental_Care
             DoctorsDetails form = new DoctorsDetails();
             form.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AllAppointments form = new AllAppointments();
+            form.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            IncomeReport form = new IncomeReport();
+            form.Show();
+        }
     }
 }

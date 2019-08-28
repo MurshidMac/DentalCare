@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
-
+using System.Data.SqlClient;
 namespace Dental_Care
 {
     public partial class Invoice : Form

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+// Available A 
 namespace Dental_Care
 {
     public partial class Appointments : Form
@@ -21,6 +22,8 @@ namespace Dental_Care
             this.getDatabaseList();
         }
 
+
+        // The available Doctor is selected for an appointment initially
         List<string> getDatabaseList()
         {
             string connetionString = "Data Source=DESKTOP-S6B08UF\\SQLEXPRESS;Initial Catalog=DentalDB;Integrated Security=True";
@@ -56,6 +59,11 @@ namespace Dental_Care
 
             AppointPatientDetails form = new AppointPatientDetails(doctorsSelection);
             form.Show();
+        }
+
+        private void Appointments_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
