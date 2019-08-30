@@ -60,5 +60,11 @@ namespace Dental_Care
             IncomeReport form = new IncomeReport();
             form.Show();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            CreateANewSystemUser form = new CreateANewSystemUser();
+            form.Show();
+        }
     }
 }

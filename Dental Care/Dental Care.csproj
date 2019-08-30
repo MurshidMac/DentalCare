@@ -98,6 +98,12 @@
     <Compile Include="AppointPatientDetails.Designer.cs">
       <DependentUpon>AppointPatientDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateANewSystemUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateANewSystemUser.Designer.cs">
+      <DependentUpon>CreateANewSystemUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database\DBConnect.cs" />
     <Compile Include="DentalDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -159,6 +165,8 @@
       <DependentUpon>MainPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\AppointmentModel.cs" />
+    <Compile Include="Models\DoctorAmountAndBillModel.cs" />
+    <Compile Include="Models\DoctorIncomeModel.cs" />
     <Compile Include="Models\DoctorModel.cs" />
     <Compile Include="Models\IncomeModel.cs" />
     <Compile Include="Models\PatientModel.cs" />
@@ -191,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AppointPatientDetails.resx">
       <DependentUpon>AppointPatientDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateANewSystemUser.resx">
+      <DependentUpon>CreateANewSystemUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoctorAppointmentList.resx">
       <DependentUpon>DoctorAppointmentList.cs</DependentUpon>
